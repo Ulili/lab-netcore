@@ -21,6 +21,29 @@ Convenção e nomenclatura
 1. Métodos Anônimos, Delegators 
 1. Lambda Expressions, Expression, Func e   Action
 
+
+# Banco de Dados
+
+Install DB usando Docker
+
+## MySql
+
+``` bash
+docker run -d --name=mysql1 -p=3306:3306 -e MYSQL_ROOT_PASSWORD='Abc,123' -v /k8s/volumes/mysql1/mysql-datadir:/var/lib/mysql mysql
+``` 
+
+## PostgreSql
+
+``` bash
+docker run --name=postgre1 -p=5432:5432 -e POSTGRES_PASSWORD='Abc,123' -v /k8s/volumes/postgresql/pgdata:/var/lib/postgresql/data postgres
+```
+
+## SqlServer
+
+``` bash
+docker run --name=sqlserver1 -v /k8s/volumes/sqlserver/data:/var/opt/mssql -e ACCEPT_EULA=Y -e SA_PASSWORD='Abc,123' -p 1433:1433 -d microsoft/mssql-server-linux:2017-latest
+```
+
 # Links
 
 https://developers.redhat.com/blog/2017/05/17/from-java-to-net-core-part-1/ 
@@ -33,3 +56,4 @@ https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalizatio
 
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions   
 
+https://docs.microsoft.com/en-us/ef/core/providers/
