@@ -17,6 +17,14 @@ namespace Lab1
             a = b = c = d = 10;
             c /= 2;
 
+            var usuario = new Usuario { Id = 1 };
+            var usuario2 = new Usuario { Id = 1 };
+
+            if (a == b)
+            {
+
+            }
+
             Console.WriteLine($"a=> {a++} b=> {++b} c=> {c} d=> {d + 6}");
             Console.WriteLine($"a=> {a}");
         }

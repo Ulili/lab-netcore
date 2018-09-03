@@ -23,9 +23,13 @@ Convenção e nomenclatura
 
 # Links
 
-https://developers.redhat.com/blog/2017/05/17/from-java-to-net-core-part-1/
+https://developers.redhat.com/blog/2017/05/17/from-java-to-net-core-part-1/ 
+
 https://blog.takipi.com/c-vs-java-5-irreplaceable-c-features-wed-kill-to-have-in-java/ 
+
 https://stackoverflow.com/questions/295224/what-are-major-differences-between-c-sharp-and-java 
-https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-conventions 
-https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions 
-https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
+
+https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-conventions   
+
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions   
+

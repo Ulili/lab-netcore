@@ -46,7 +46,9 @@ namespace Lab1
             Console.WriteLine($"Quadrado => { operador(4)}");
 
             //Delegate com Lamda Expression
-            operador = num => num + 10;
+            operador = d => d + 10;
+
+            Console.WriteLine($"Soma 10=> {operador(2320)}");
         }
 
         private double Dobro(double input)
@@ -74,7 +76,7 @@ namespace Lab1
 
             // Remove hiDel from the multicast delegate, leaving byeDel,
             // which calls only the method Goodbye.
-            multiMinusHiDel = multiDel - hiDel;
+            multiMinusHiDel = byeDel - hiDel;
 
             Console.WriteLine("Invoking delegate hiDel:");
             hiDel("A");

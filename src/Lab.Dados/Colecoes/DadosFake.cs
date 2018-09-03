@@ -18,7 +18,7 @@ namespace Lab.Dados.Colecoes
                 {
                     resultado.Add(new Usuario{
                         Nome = $"Usuário dos Santos {quantidade}",
-                        Id = quantidade,
+                        Id = i,
                         Pedidos = Pedidos(rnd.Next(1, 20)) //Gerar inteiros aleatorios de 1 a 20
                     });
                 }
