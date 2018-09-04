@@ -8,7 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace Lab3.Controllers
 {
 
+    /// <summary>
+    /// Ctrl de usuário
+    /// </summary>
     [ApiController]
+    [Produces("application/json")]
     [Route("api/v1/[controller]")]
     public class UsuariosController : ControllerBase
     {
@@ -49,6 +53,11 @@ namespace Lab3.Controllers
         [ProducesResponseType(typeof(Mensagem), 400)]
         public ActionResult<Usuario> Inserir([FromBody] Usuario usuario ){
 
+            //Exemplo de validação de negócio
+            if (usuario.Id == 10)
+            {
+                return new BadRequestObjectResult(new Mensagem{ Code=30000, Msg ="Msg usuário não pode ter Id 10" });
+            }
             return usuario;
         }
     }

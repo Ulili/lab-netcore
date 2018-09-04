@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab3.Controllers
 {
-    [Route("api/v1/[controller]")]
+
     [ApiController]
+    [Produces("application/json")]
+    [Route("api/v1/[controller]")]
     public class ValuesController : ControllerBase
     {
         // GET api/values
