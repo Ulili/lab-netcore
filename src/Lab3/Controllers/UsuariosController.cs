@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using Lab3.Data;
 using Lab3.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -49,8 +50,8 @@ namespace Lab3.Controllers
         /// <param name="usuario"></param>
         /// <returns></returns>
         [HttpPost]
-        [ProducesResponseType(typeof(Usuario), 200)]
-        [ProducesResponseType(typeof(Mensagem), 400)]
+        [ProducesResponseType(typeof(Usuario), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(Mensagem), (int)HttpStatusCode.BadRequest)]
         public ActionResult<Usuario> Inserir([FromBody] Usuario usuario ){
 
             //Exemplo de validação de negócio

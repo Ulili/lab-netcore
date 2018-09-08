@@ -1,0 +1,15 @@
+version: '2'
+services:
+  haproxy:
+    image: haproxy:1.6
+    container_name: haproxy
+    hostname: haproxy
+    ports:
+      - 5672:5672
+      - 20000:20000
+    network_mode: "bridge"
+    links:
+      - rabbitmq1:rabbitmq1
+      - rabbitmq2:rabbitmq2
+      - rabbitmq3:rabbitmq3
+      - rabbitmq4:rabbitmq4
